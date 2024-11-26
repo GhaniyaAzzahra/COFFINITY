@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margonda</title>
+    <link rel="stylesheet" href="margonda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="margonda.js" defer></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <nav id="sidebar">
+            <div class="sidebar-ui">
+                <div class="logo">
+                    <img src="logo coffinity.png">
+                </div>
+                <div class="sidebar">
+                    <ul class="side-list">
+                        <li class="side-item sub-menu"><a>Location</a>
+                            <ul>
+                                <li><a href="margonda.html">Margonda</a></li>
+                                <li><a href="kukusan.html">Kukusan</a></li>
+                            </ul>
+                        </li>
+                        <li class="side-item"><a href="#">24 Hours</a></li>
+                        <li class="side-item"><a href="#">Price Range</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="toggle-menu" id="toggle-click">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('ul li').click(function(){
+                    $(this).siblings().removeClass('active');
+                    $(this).toggleClass('active');
+                })
+            })
+    
+            const sidebar = document.getElementById('sidebar');
+            const btn = document.getElementById('toggle-click');
+            btn.addEventListener('click', () => {
+                sidebar.classList.toggle('active')
+                btn.classList.toggle('active')
+            })
+        </script>
+    
+    </div>
+    
+
+
+<div class="container">
+
+    <h2 class="title">Margonda</h2>
+        
+    <div class="product-container">
+        <div class="product" data-name="p-1">
+            <a href="e+e.html">
+                <img src="e+e kitchen.png" alt="">
+            </a>
+            <h2>E+e kitchen</h2>
+            <div class="time">
+                Open 10.00am <br> Close 10.00pm
+            </div>
+        </div>
+
+        <div class="product" data-name="p-2">
+            <a href="walkingdrums.html">
+                <img src="walking drums.jpeg" alt="">
+            </a>
+            <h2>Walking Drums</h2>
+            <div class="time">
+                Open 07.00am <br> Close 11.00pm
+            </div>
+        </div>
+    
+        <div class="product" data-name="p-3">
+            <a href="coffetoffee.html">
+                <img src="coffe toffee.png" alt="">
+            </a>
+            <h2>Coffee Toffee</h2>
+            <div class="time">
+                Open 09.00am <br> Close 12.00pm
+            </div>
+        </div>
+
+        
+        <div class="product" data-name="p-4">
+            <a href="tameloatap.html">
+                <img src="tamelo atap.jpeg" alt="">
+            </a>
+            <h2>Tamelo Atap Cafe</h2>
+            <div class="time">
+            Open 10.00am <br> Close 10.00pm
+            </div>
+        </div>
+
+        <div class="product" data-name="p-5">
+            <a href="grahacoffee.html">
+                <img src="graha coffee.jpeg" alt="">
+            </a>
+            <h2>Graha Coffee and Eatery</h2>
+            <div class="time">
+            Open 09.00am <br> Close 11.00pm
+            </div>
+
+        </div>
+
+    </div>
+    
+</div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
