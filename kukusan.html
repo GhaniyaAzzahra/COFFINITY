@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margonda</title>
+    <link rel="stylesheet" href="kukusan.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="header">
+    <nav id="sidebar">
+        <div class="sidebar-ui">
+            <div class="logo">
+                <img src="logo coffinity.png">
+            </div>
+            <div class="sidebar">
+                <ul class="side-list">
+                    <li class="side-item sub-menu"><a>Location</a>
+                        <ul>
+                            <li><a href="margonda.html">Margonda</a></li>
+                            <li><a href="kukusan.html">Kukusan</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-item"><a href="#">24 Hours</a></li>
+                    <li class="side-item"><a href="#">Price Range</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="toggle-menu" id="toggle-click">
+        <i class="fa fa-bars"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('ul li').click(function(){
+                $(this).siblings().removeClass('active');
+                $(this).toggleClass('active');
+            })
+        })
+
+        const sidebar = document.getElementById('sidebar');
+        const btn = document.getElementById('toggle-click');
+        btn.addEventListener('click', () => {
+            sidebar.classList.toggle('active')
+            btn.classList.toggle('active')
+        })
+    </script>
+
+</div>
+
+
+<div class="container">
+
+
+    <h2 class="title">Kukusan</h2>
+
+        
+    <div class="product-container">
+        <div class="product" data-name="p-1">
+            <a href="kylau.html">
+                <img src="kylau.jpeg" alt="">
+            </a>
+            <h2>Kylau</h2>
+            <div class="time">
+                24 Hours
+            </div>
+        </div>
+
+        <div class="product" data-name="p-2">
+            <a href="whatsup.html">
+                <img src="whats up cafe.jpeg" alt="">
+            </a>
+            <h2>What's Up Cafe</h2>
+            <div class="time">
+                Open 08.00am <br> Close 10.00pm
+            </div>
+        </div>
+    
+        <div class="product" data-name="p-3">
+            <a href="suarruang.html">
+                <img src="suar ruang.jpeg" alt="">
+            </a>
+            <h2>Suar Ruang Coffee Grounds</h2>
+            <div class="time">
+                Open 09.00am <br> Close 11.30pm
+            </div>
+        </div>
+
+        
+        <div class="product" data-name="p-4">
+            <a href="kopiforji.html">
+                <img src="kopi forji.jpeg" alt="">
+            </a>
+            <h2>Kedai Kopi Forji</h2>
+            <div class="time">
+            Open 01.00pm <br> Close 12.00pm
+            </div>
+        </div>
+
+        <div class="product" data-name="p-5">
+            <a href="beningcoffee.html">
+                <img src="bening coffee.jpeg" alt="">
+            </a>
+            <h2>Bening Coffee and Space</h2>
+            <div class="time">
+            Open 09.00am <br> Close 10.00pm
+            </div>
+
+        </div>
+
+        <div class="product" data-name="p-5">
+            <a href="coffith.html">
+                <img src="coffith.jpeg" alt="">
+            </a>
+            <h2>Coffith</h2>
+            <div class="time">
+            Open 07.00am <br> Close 10.00pm
+            </div>
+
+        </div>
+
+        <div class="product" data-name="p-5">
+            <a href="kopibrumbun.html">
+                <img src="kopi brumbun.jpeg" alt="">
+            </a>
+            <h2>Kopi Brumbun</h2>
+            <div class="time">
+            Open 08.00am <br> Close 11.00pm
+            </div>
+
+        </div>
+
+        <div class="product" data-name="p-5">
+            <a href="letusa.html">
+                <img src="le tusa.jpeg" alt="">
+            </a>
+            <h2>Le túsa</h2>
+            <div class="time">
+            Open 07.00am <br> Close 10.00pm
+            </div>
+
+        </div>
+
+        <div class="product" data-name="p-5">
+            <a href="sahutacoffee.html">
+                <img src="sahuta coffee.jpeg" alt="">
+            </a>
+            <h2>Sahuta Coffee and Eatery</h2>
+            <div class="time">
+            Open 04.00pm <br> Close 01.05am
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    
+
+</div>   
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
